@@ -2,8 +2,8 @@ require 'pry'
 
 class CLI_methods
 
-  def initialize(path)
-    library = music_library_controller.new(path)
+  def initialize
+    library = music_library_controller.new
     binding.pry
   end
 
