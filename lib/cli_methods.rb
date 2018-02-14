@@ -5,7 +5,7 @@ class CLI_methods
   end
 
   def list_songs
-    Song.self.all.collect {|song| puts "song.name"}
+    library.self.all.collect {|song| puts "song.name"}
   end
 
 
