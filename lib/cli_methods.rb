@@ -3,7 +3,7 @@ require 'pry'
 class CLI_methods
 
   def initialize
-    library = music_library_controller.new
+    library = MusicLibraryController.new
     binding.pry
   end
 
