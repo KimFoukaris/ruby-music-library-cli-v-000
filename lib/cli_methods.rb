@@ -1,9 +1,13 @@
 class CLI_methods
 
-  def list_songs
-    Song.self.all.collec {|song| puts "song.name"}
+  def initialize(path)
+    library = music_library_controller.new(path)
   end
 
+  def list_songs
+    Song.self.all.collect {|song| puts "song.name"}
+  end
+    
 
 
 end
