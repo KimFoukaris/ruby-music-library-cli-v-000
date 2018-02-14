@@ -77,7 +77,8 @@ class MusicLibraryController
   end
 
   def play_song
-    songs = self.list_songs
+    self.list_songs
+    songs = Songs.all.sort
     puts "Which song number would you like to play?"
     input = gets.strip.to_i
 
