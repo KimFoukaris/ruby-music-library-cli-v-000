@@ -80,6 +80,9 @@ class MusicLibraryController
     self.list_songs {|song| puts "#{song}"}
     puts "Which song number would you like to play?"
     input = gets.strip
+    if input > 0 && < self.list_songs.length
+      puts "song"
+    end
   end
 
 end
