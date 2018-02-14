@@ -39,7 +39,8 @@ class MusicLibraryController
   end
 
   def list_songs
-    songs_alphabetized = Song.all.sort
+    songs_alphabetized = Song.all
+    binding.pry
     songs_aphabetized {|song| puts "#{song}"}
 
   end
