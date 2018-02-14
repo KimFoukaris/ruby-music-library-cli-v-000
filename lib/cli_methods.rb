@@ -7,7 +7,8 @@ class CLI_methods
   end
 
   def list_songs
-    library.self.all.collect {|song| puts "song.name"}
+    music_library_controller
+    #library.self.all.collect {|song| puts "song.name"}
   end
 
 
